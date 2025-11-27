@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    /*this is a fallback */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+
+}
+
+
+/*display -> how elements behave in the html-css document*/
+
+/*display block -> occupies the 100% of the width(ancho) of the father class(body)*/
+h1{
+    background-color: yellowgreen;
+    display: block;
+}
+
+button{
+    display: inline-block;
+    background-color: violet;
+}
+
+span{
+    color: red;
+    font-weight: bold;
+}
+
+/*display flex -> columns or rows* - always father element/
+/*Flexible container could reubicate child elements*/
+/*display grid -> grids columns ands rows*/
+
+section{
+    background-color: wheat;
+    padding: 20px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* -> dynamic grids*/
+    gap: 300px;
+}
+
+div{
+    background-color: yellowgreen;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.242);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+div h2{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div h3{
+    text-align: center;
+    font-weight: lighter;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+p{
+    color: gray;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+div button{
+    border: none;
+    background-color: rgb(178, 233, 227);
+    padding: 8px 16px;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+}
